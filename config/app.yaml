@@ -1,0 +1,32 @@
+# 应用业务配置默认值（spec §3.6 / ADR-23）
+# 环境变量承载敏感凭证，业务参数落 yaml 便于运维调整
+
+# 交期默认值（ADR-17）
+lead_time:
+  stock_delivery_days: 1        # 现货交期默认 1 天
+  procurement_cycle_fallback: 15  # 采购周期兜底 15 天
+
+# OE 归一化（ADR-15）
+oe_normalize:
+  strip_leading_zeros: true
+  loose_match: false
+
+# 集成层超时/重试参数（ADR-22 / ADR-23）
+integration:
+  connect_timeout: 5      # 建连超时 5s
+  read_timeout: 10        # 单次查询响应超时 10s
+  max_retries: 3          # 重试上限
+  backoff_initial: 1      # 首次重试等待 1s
+  backoff_factor: 2       # 指数退避因子 ×2
+  backoff_max: 30         # 退避封顶 30s
+  sync_concurrency: 5     # ETL 同步节流并发（金蝶硬上限 10，留余量）
+
+# 编排层（ADR-31 / ADR-33）
+orchestrator:
+  llm_timeout: 2          # LLM 调用超时 2s（超时降级模板回答）
+  session_ttl: 1800       # Redis 会话 TTL 30 分钟（秒）
+  history_max: 10         # 会话历史最多保留条数
+
+# 审计（ADR-32）
+audit:
+  retention_days: 90      # 审计日志保留天数

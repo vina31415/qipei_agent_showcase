@@ -1,0 +1,146 @@
+# OE 归一化测试样本（26 条，业务方提供）
+# 来源：PIM 脱敏样本，覆盖底盘/发动机/制动品类
+# 用于 P5-1 测试断言固化
+
+samples:
+  # 26 条原始样本
+  - oe_raw: "6Q0820803C"
+    expected: "6Q0820803C"
+    is_valid: true
+  - oe_raw: "0986479012"
+    expected: "986479012"
+    is_valid: true
+  - oe_raw: "43206-3JA0A"
+    expected: "432063JA0A"
+    is_valid: true
+  - oe_raw: "LR020365"
+    expected: "LR020365"
+    is_valid: true
+  - oe_raw: "1K0615301AA"
+    expected: "1K0615301AA"
+    is_valid: true
+  - oe_raw: "2113200431"
+    expected: "2113200431"
+    is_valid: true
+  - oe_raw: "90510950"
+    expected: "90510950"
+    is_valid: true
+  - oe_raw: "0281002405"
+    expected: "281002405"
+    is_valid: true
+  - oe_raw: "51750-2H000"
+    expected: "517502H000"
+    is_valid: true
+  - oe_raw: "A2043200630"
+    expected: "A2043200630"
+    is_valid: true
+  - oe_raw: "12637020"
+    expected: "12637020"
+    is_valid: true
+  - oe_raw: "7L0615301"
+    expected: "7L0615301"
+    is_valid: true
+  - oe_raw: "42535037"
+    expected: "42535037"
+    is_valid: true
+  - oe_raw: "13717524465"
+    expected: "13717524465"
+    is_valid: true
+  - oe_raw: "58101-2E000"
+    expected: "581012E000"
+    is_valid: true
+  - oe_raw: "96409123"
+    expected: "96409123"
+    is_valid: true
+  - oe_raw: "27700-2B700"
+    expected: "277002B700"
+    is_valid: true
+  - oe_raw: "0445110247"
+    expected: "445110247"
+    is_valid: true
+  - oe_raw: "31277354"
+    expected: "31277354"
+    is_valid: true
+  - oe_raw: "8943768441"
+    expected: "8943768441"
+    is_valid: true
+  - oe_raw: "A0004311200"
+    expected: "A0004311200"
+    is_valid: true
+  - oe_raw: "7701208054"
+    expected: "7701208054"
+    is_valid: true
+  - oe_raw: "16100-87J00"
+    expected: "1610087J00"
+    is_valid: true
+  - oe_raw: "11377548388"
+    expected: "11377548388"
+    is_valid: true
+  - oe_raw: "4681132AB"
+    expected: "4681132AB"
+    is_valid: true
+  - oe_raw: "90467655"
+    expected: "90467655"
+    is_valid: true
+
+# 变体样本（前缀/分隔符/前导零/大写）
+variants:
+  # 前缀变体
+  - oe_raw: "REF.NO.123456"
+    expected: "123456"
+    is_valid: true
+  - oe_raw: "OEM#123456"
+    expected: "123456"
+    is_valid: true
+  - oe_raw: "OE#0986479012"
+    expected: "986479012"
+    is_valid: true
+  - oe_raw: "REF 123456"
+    expected: "123456"
+    is_valid: true
+  - oe_raw: "NO.123456"
+    expected: "123456"
+    is_valid: true
+  - oe_raw: "N°123456"
+    expected: "123456"
+    is_valid: true
+  # 分隔符变体
+  - oe_raw: "1K0-615-301"
+    expected: "1K0615301"
+    is_valid: true
+  - oe_raw: "1K0/615/301"
+    expected: "1K0615301"
+    is_valid: true
+  - oe_raw: "1K0.615.301"
+    expected: "1K0615301"
+    is_valid: true
+  - oe_raw: "1K0_615_301"
+    expected: "1K0615301"
+    is_valid: true
+  - oe_raw: "0 986 479 012"
+    expected: "986479012"
+    is_valid: true
+  # 前导零变体
+  - oe_raw: "000"
+    expected: null
+    is_valid: false
+  - oe_raw: "0"
+    expected: null
+    is_valid: false
+  - oe_raw: "0000"
+    expected: null
+    is_valid: false
+  # 大小写变体
+  - oe_raw: "6q0820803c"
+    expected: "6Q0820803C"
+    is_valid: true
+  - oe_raw: "Lr020365"
+    expected: "LR020365"
+    is_valid: true
+  # 版本后缀差异
+  - oe_raw: "6Q0820803C"
+    expected: "6Q0820803C"
+    is_valid: true
+  - oe_raw: "6Q0820803"
+    expected: "6Q0820803"
+    is_valid: true

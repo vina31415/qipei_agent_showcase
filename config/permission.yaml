@@ -1,0 +1,78 @@
+# 权限矩阵配置（ADR-07）
+# 角色 × 字段可见性
+
+roles:
+  sales:
+    name: "业务员"
+    visible_fields:
+      - "sku_code"
+      - "name"
+      - "spec"
+      - "image_url"
+      - "fitments"
+      - "oe_list"
+      - "on_hand"
+      - "price"
+      - "lead_time"
+      - "supplier_note"
+      - "alternatives"
+      - "risk_level"
+      - "risk_hint"
+      - "customer_tier"
+      - "pos"
+  merchandiser:
+    name: "跟单"
+    visible_fields:
+      - "sku_code"
+      - "name"
+      - "spec"
+      - "image_url"
+      - "fitments"
+      - "oe_list"
+      - "on_hand"
+      - "price"
+      - "lead_time"
+      - "supplier_note"
+      - "alternatives"
+      - "risk_level"
+      - "risk_hint"
+      - "customer_tier"
+      - "pos"
+  cs:
+    name: "售后"
+    visible_fields:
+      - "sku_code"
+      - "name"
+      - "spec"
+      - "image_url"
+      - "fitments"
+      - "oe_list"
+      - "on_hand"
+      - "price"
+      - "lead_time"
+      - "risk_level"
+      - "risk_hint"
+      - "customer_tier"
+    hidden_fields:
+      - "supplier_note"
+      - "alternatives"
+      - "pos"
+  warehouse:
+    name: "仓库"
+    visible_fields:
+      - "sku_code"
+      - "name"
+      - "spec"
+      - "image_url"
+      - "fitments"
+      - "oe_list"
+      - "on_hand"
+    hidden_fields:
+      - "price"
+      - "lead_time"
+      - "supplier_note"
+      - "alternatives"
+      - "risk_level"
+      - "risk_hint"
+      - "customer_tier"
+      - "pos"

@@ -1,0 +1,837 @@
+- query: 查 OE 6Q0820803C
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE:1K0615301AA
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 零件号 986479012
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3C0615301D 有货吗
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 配件号 8K0615301B
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 5Q0615301AA 多少钱
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 4M0615301A
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 8W0615301C
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 零件 7P0615301B
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 4H0615301D 库存
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OEM# 5G0615301A
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: REF.NO. 8T0615301B
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3AA615301C
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 OE 6R0615301A
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 2G0615301B 价格
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 零件号 1K0615301AA
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 6Q0820803C 和 6Q0820803
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查配件 OE 5Q0698151
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 8K0698151B 刹车片
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3C0698151A 有原厂吗
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 1K0615301AA 滤芯
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 OE 4M0698151
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 8W0698151A 多少钱
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 零件 7P0698151B
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 4H0698151C 库存多少
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 5G0698151A
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 OE 8T0698151B
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3AA698151C 有货吗
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 6R0698151A 价格
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 零件号 2G0698151B
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 5Q0615301AA 交期几天
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: 查 OE 8K0615301B 库存
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3C0615301D 原厂还是副厂
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 1K0615301AA 能发吗
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 配件 OE 6Q0615301C
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 4M0615301A 什么时候到
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 8W0615301C 有没有替代
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查零件 7P0615301B
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 4H0615301D 能便宜点吗
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 5G0615301A 批量价
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 OE 8T0615301B 最小起订
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3AA615301C 含税吗
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 6R0615301A 未税价
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 零件 2G0615301B 有图片吗
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 5Q0698151 参数
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 OE 8K0698151B 规格
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3C0698151A 重量
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 1K0615301AA 包装尺寸
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 4M0698151 产地
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 8W0698151A 品牌
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 零件 7P0698151B 质保
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 4H0698151C 认证
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 5G0698151A 批次
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 OE 8T0698151B 生产日期
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3AA698151C 有效期
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 6R0698151A 供应商
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 零件号 2G0698151B 厂家
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 5Q0615301AA 替代件
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 查 OE 8K0615301B 兼容件
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: OE 3C0615301D 互换号
+  expected_intent: oe_query
+  expected_params:
+    has_oe: true
+- query: 大众高尔夫适配什么刹车片
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 车型 大众 高尔夫
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 丰田卡罗拉配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 宝马 3 系刹车片
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 奔驰 C 级空滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 适配 奥迪 A4 的机油滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 本田雅阁雨刮
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 日产天籁刹车盘
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 福特福克斯机滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 雪佛兰科鲁兹空滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 现代伊兰特刹车片
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 起亚 K3 雨刮
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 马自达 6 机滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 斯巴鲁森林人空滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 铃木雨燕刹车片
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 三菱欧蓝德机滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 五十铃 D-MAX 空滤
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 大发森雅刹车片
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 标致 308 雨刮
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 雷诺科雷傲机滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 雪铁龙 C5 空滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 菲亚特 500 刹车片
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 欧宝雅特机滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 沃尔沃 XC60 空滤
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 斯柯达明锐刹车片
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 西雅特 Leon 雨刮
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 保时捷 Cayenne 机滤
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 路虎揽胜空滤
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 捷豹 XE 刹车片
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 迷你 Cooper 机滤
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 大众帕萨特适配什么配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 宝马 5 系有什么配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 奔驰 E 级配件查询
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 奥迪 Q5 适配配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 丰田 RAV4 配件
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 本田 CR-V 适配什么
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 日产奇骏配件查询
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 福特锐际适配配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 雪佛兰探界者配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 现代途胜适配什么
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 起亚智跑配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 马自达 CX-5 适配
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 斯巴鲁 XV 配件查询
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 铃木维特拉适配什么
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 三菱劲炫配件
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 沃尔沃 S90 适配配件
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 保时捷 Macan 配件
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 路虎发现适配什么
+  expected_intent: fitment_query
+  expected_params:
+    has_fitment: true
+- query: 捷豹 F-PACE 配件
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 迷你 Countryman 适配
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: 这个配件交期多久
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 这个配件多久能到货
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期几天
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 发货要多久
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 几天能到
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: lead time 多少
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: 这个货多久能发
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 到货时间
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期大概几天
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 发货周期多久
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 多久能发货
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期多长时间
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 到货要几天
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 发货要几天
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期能快点吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 最快几天到货
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期稳定吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 发货时间确定吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期有保证吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 到货时间准吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期一般几天
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 发货要等几天
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期能缩短吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 到货快吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期延迟怎么办
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 发货延迟了吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期能提前吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 到货能加急吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 交期有加急服务吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 发货能加急吗
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: OE 6Q0820803C 适配大众高尔夫吗，库存多少
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 1K0615301AA 交期几天
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: OE 3C0615301D 适配宝马 3 系吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 8K0615301B 交期多久，适配什么车
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 5Q0615301AA 适配丰田卡罗拉吗，交期几天
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 4M0615301A 多久能到货
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: OE 8W0615301C 适配奔驰 C 级吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 7P0615301B 交期几天，适配什么车型
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 4H0615301D 适配奥迪 A4 吗，多久能到
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 5G0615301A 交期多少
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: OE 8T0615301B 适配福特福克斯吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 3AA615301C 交期几天，适配日产天籁吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 6R0615301A 多久发货
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: OE 2G0615301B 适配现代伊兰特吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 5Q0698151 交期几天，适配起亚 K3 吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 8K0698151B 多久能到货
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: OE 3C0698151A 适配马自达 6 吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 1K0615301AA 交期多少，适配斯巴鲁吗
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 4M0698151 适配铃木雨燕吗，交期几天
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: true
+- query: OE 8W0698151A 多久能发货
+  expected_intent: composite_query
+  expected_params:
+    has_oe: true
+    has_fitment: false
+- query: 你好
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 帮我查个配件
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 在吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 今天天气怎么样
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 你们几点下班
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 能便宜点吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 有没有优惠
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 谢谢
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 好的
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 知道了
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 再见
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 稍等
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 等一下
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 我想问一下
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 请问
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 麻烦查一下
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 帮我看看
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 这个是什么
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 多少钱
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 有货吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 什么时候发货
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 能退货吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 质量怎么样
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 是正品吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 保修多久
+  expected_intent: lead_time_query
+  expected_params:
+    has_lead_time: true
+- query: 怎么安装
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 有没有教程
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 发什么快递
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 包邮吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 能开发票吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 支持货到付款吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 最小起订量多少
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 批量有优惠吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 能定制吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 有没有样品
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 合作流程是什么
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 怎么联系你们
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 公司地址在哪
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 营业时间
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
+- query: 周末上班吗
+  expected_intent: composite_query
+  expected_params:
+    fallback: true
